@@ -1,23 +1,94 @@
 aid: monadelphous
+
 name: Monadelphous
-description: 'Monadelphous is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Monadelphous is an ASX-200 listed Australian engineering group providing multidisciplinary construction, maintenance and industrial services to many of the largest companies in the resources,
+  energy and infrastructure sectors. Founded in Kalgoorlie, Western Australia in 1972 as Contract Engineering Associates (CEA), it adopted the Monadelphous name in 1978. Its website publishes no public
+  API, developer portal or API documentation; portal.monadelphous.com.au is a Citrix StoreWeb remote-access login for staff, not a developer portal.
+
 url: https://raw.githubusercontent.com/api-evangelist/monadelphous/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
-modified: '2026-10-21'
+
+modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Engineering
+- Construction
+- Maintenance Services
+- Industrial Services
+- Mining
+- Energy
+- Infrastructure
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.monadelphous.com.au/media/5833048/monadelphous-logo-horizontal-red-and-black-rgb-resized-for-web.png
+
 common:
+- type: Hosts
+  url: hosts/monadelphous-hosts.yml
+- type: DeveloperPortal
+  url: https://portal.monadelphous.com.au/
+- type: DomainSecurity
+  url: security/monadelphous-domain-security.yml
 - type: Website
-  url: https://monadelphous.com.au/
+  url: https://www.monadelphous.com.au/
+- type: Newsroom
+  url: https://www.monadelphous.com.au/news/
+- type: Support
+  url: https://www.monadelphous.com.au/contact/
+- type: About
+  url: https://www.monadelphous.com.au/about-us/
+- type: Investors
+  url: https://www.monadelphous.com.au/investors/
+- type: Careers
+  url: https://careers.monadelphous.com.au/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/monadelphous
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Identity verified from the company site (title and About page name Monadelphous). No developer portal, API docs, privacy policy or terms links are published on the homepage; portal.monadelphous.com.au
+    is a Citrix staff remote-access login and was not recorded as a DeveloperPortal.
+  evidence:
+  - url: https://www.monadelphous.com.au/
+    status: 200
+  - url: https://www.monadelphous.com.au/about-us/
+    status: 200
+  - url: https://www.monadelphous.com.au/news/
+    status: 200
+  - url: https://www.monadelphous.com.au/contact/
+    status: 200
+  - url: https://www.monadelphous.com.au/investors/
+    status: 200
+  - url: https://careers.monadelphous.com.au/
+    status: 200
+  - url: https://www.linkedin.com/company/monadelphous
+    status: 200
+  - url: https://portal.monadelphous.com.au/Citrix/StoreWeb/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

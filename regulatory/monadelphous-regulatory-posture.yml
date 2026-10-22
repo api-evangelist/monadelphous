@@ -1,0 +1,59 @@
+generated: '2026-10-22'
+method: searched
+source:
+- https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+- https://www.monadelphous.com.au/about-us/monadelphous-employee-app-privacy-statement/
+notes: Monadelphous is an ASX-listed engineering contractor with no public API. Its only privacy documents are the Group Privacy Policy (BMS-POL-040 Rev 2, September 2026, linked from the Corporate Governance page) and an employee-app privacy statement listed in the sitemap. Both are framed by the Australian Privacy Act / Australian Privacy Principles. Neither names a subprocessor list, incident-notification commitment, AI use, GPC handling or accessibility standard, so nothing is recorded for those signals. Quotes from the PDF were extracted with pdftotext; line-wrap breaks are joined with a single space.
+signals:
+  data_subject_request:
+    url: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+    section: Access to and correction of your personal information
+    note: Access and correction rights under the Australian Privacy Principles, exercised by written request to the Contact Us details; a reasonable administration fee may apply. The employee-app statement adds that people may ask for deletion, and says employee records are exempt from the access entitlement. No online form or dedicated DSR address is named beyond the general contact.
+    evidence:
+    - source: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: If you want access to your personal information you can submit a written request using the details in the Contact Us section below. In some cases, a reasonable administration fee may be charged for providing access.
+    - source: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: If your personal information changes, or if you believe that the personal information that we hold is no longer accurate, up to date or complete, then you can ask us to correct it by sending a written request using the details in the Contact Us section.
+    - source: https://www.monadelphous.com.au/about-us/monadelphous-employee-app-privacy-statement/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: In addition, please notify us if you would like us to destroy or delete your personal information. Access to records may incur a reasonable fee. Employee records are exempt from this entitlement.
+  data_retention:
+    url: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+    section: Storage and disclosure
+    note: Retention is purpose- and law-bound with no fixed periods; data is destroyed or de-identified once the purpose has ceased and no legal retention duty remains.
+    evidence:
+    - source: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'We will take reasonable steps to destroy or de-identify your personal information once: the purposes for which we collected your personal information have ceased; and we are no longer required to retain your personal information by law.'
+  data_residency:
+    url: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+    section: Disclosure outside Australia
+    note: No residency commitment. Personal information may be disclosed outside Australia (China, Mongolia, Philippines and Papua New Guinea are named as operating countries), with reasonable steps to have overseas recipients comply with the Privacy Act.
+    evidence:
+    - source: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: Monadelphous has operations in a number of countries outside Australia, including China, Mongolia, Philippines and Papua New Guinea. We may disclose personal information to entities outside Australia where it is reasonably necessary for us to do so for our business purposes.
+    - source: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: Where we disclose information outside Australia, we will take all reasonable steps to ensure that the overseas recipient complies with this Policy and the Privacy Act.
+  subprocessors:
+    url: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+    section: Storage and disclosure
+    note: Third-party recipients are described only by category (customers, suppliers, joint venture partners, related bodies corporate, third-party analytics tools); no named subprocessor list is published. Recipients are required to take reasonable security measures.
+    evidence:
+    - source: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: In carrying out our functions and activities, we may, from time to time, provide information to third parties, such as our customers, suppliers and joint venture partners. These third parties may be located locally or overseas.
+    - source: https://www.monadelphous.com.au/media/5699151/bms-pol-040-privacy-policy.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: Where we provide your information to a third party, we will also require them to take reasonable security measures.

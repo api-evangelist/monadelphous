@@ -1,0 +1,23 @@
+name: Monadelphous MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+description: >-
+  No MCP server, hosted or local, is published by or for Monadelphous, and none can be derived:
+  the company publishes no OpenAPI or other API contract to derive tools from.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+evidence:
+  - check: preflight contract discovery (2026-10-21) on monadelphous.com.au, careers., jobs., portal.monadelphous.com.au
+    result: openapi absent, asyncapi absent, graphql absent
+  - check: https://portal.monadelphous.com.au/mcp
+    status: 403
+    note: >-
+      The control path also answered 403 (opaque edge). The host is a Citrix StoreWeb staff remote-access
+      login, not an advertised MCP endpoint, so this is not evidence of an MCP server.
+  - check: web search "Monadelphous MCP server OR API developer"
+    result: no Monadelphous MCP server or developer API found; the hits were unrelated Monad blockchain servers
+tools: []

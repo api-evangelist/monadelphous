@@ -1,0 +1,15 @@
+name: Monadelphous packages
+generated: '2026-10-22'
+method: none
+note: No first-party SDK, CLI or client library found. Monadelphous publishes no public API or developer portal.
+checked:
+- url: https://registry.npmjs.org/monadelphous
+  status: 404
+- url: https://pypi.org/pypi/monadelphous/json
+  status: 404
+- url: https://rubygems.org/api/v1/gems/monadelphous.json
+  status: 404
+- url: https://api.github.com/search/repositories?q=monadelphous
+  status: 200
+  note: total_count 0
+packages: []
